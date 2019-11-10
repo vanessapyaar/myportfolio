@@ -4326,7 +4326,7 @@ ol.lead li:not(:last-child) {
   opacity: .6;
 }
 .social-list a {
-  color: #252525;
+  color: #fff;
 }
 .imagebg:not(.image--light) .social-list a {
   color: #fff;
@@ -4474,6 +4474,7 @@ p > .btn {
 }
 .btn--icon i.socicon {
   line-height: 42px;
+  color: #fff;
 }
 .btn--cart {
   width: 3.71428571em;
@@ -4746,8 +4747,8 @@ section.parallax .row .background-image-holder {
   font-family: 'Open Sans', 'Roboto', 'Helvetica', Sans-Serif;
 }
 .bar .logo {
-  max-height: 5em;
-  max-width: 300px;
+  max-height: 1.85714286em;
+  max-width: none;
 }
 .menu-horizontal > li > a,
 .menu-horizontal > li > .modal-instance > a {
@@ -5334,6 +5335,7 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
 .tweets-feed-2 li:before {
   font-family: 'socicon';
   content: "\e08d";
+  color: #fff;
 }
 .tweets-feed-2 li .tweet {
   width: 85%;
@@ -9078,4 +9080,125 @@ footer.footer-7 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* div do conteudo */ 
+
+.has-text-centered {
+  text-align: center !important;
+}
+
+.section {
+  padding: 5rem 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.section.skills {
+  margin-top: -14rem;
+  padding-bottom: 1rem;
+}
+
+.section.skills .box .content .columns .column {
+  border-bottom: 0px solid #E6ECF8;
+  border-right: 1px solid #E6ECF8;
+  padding: 60px 35px;
+}
+
+.section.skills .box .content .columns .column figure.image img.is-skill-icon {
+  height: 48px;
+  width: auto;
+}
+
+.section.skills {
+  margin-top: -14rem;
+  padding-bottom: 1rem;
+}
+
+.section {
+  padding: 5rem 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.has-text-centered {
+  text-align: center !important;
+}
+
+article, aside, figure, footer, header, hgroup, section {
+  display: block;
+}
+*, ::before, ::after {
+
+  box-sizing: inherit;
+}
+
+.container.is-narrow {
+
+  max-width: 1200px;
+
+}
+.container {
+
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.box {
+
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5),0 0 0 1px #E6ECF8;
+  color: #293347;
+  display: block;
+  padding: 1.25rem;
+
+}
+
+.section.skills .box {
+
+  padding: 0;
+
+}
+.box {
+
+  border-radius: 12px;
+
+}
+
+.section.skills .box .content .columns {
+
+  margin-left: 0;
+  margin-right: 0;
+
+}
+.columns:not(.is-desktop) {
+
+  display: flex;
+
+}
+.columns.is-centered {
+
+  justify-content: center;
+
+}
+.columns:last-child {
+
+  margin-bottom: -.75rem;
+
+}
+.columns {
+
+  margin-left: -.75rem;
+  margin-right: -.75rem;
+  margin-top: -.75rem;
+
+}
+*, ::before, ::after {
+
+  box-sizing: inherit;
+
 }
