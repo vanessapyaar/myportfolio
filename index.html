@@ -16,39 +16,24 @@
         <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body class=" theme--bordered">
         <a id="start"></a>
-        <div class="nav-container ">
-            <nav class="bar bar-toggle " data-fixed-at="200">
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-1 col-sm-2 col-xs-3">
-                            <div class="bar__module">
-                                <a href="index.html">
-                                    <img class="logo logo-dark" alt="logo" src="img/life.jpg" />
-                                    <img class="logo logo-light" alt="logo" src="img/disable" />
-                                </a>
-                            </div>
-                            <!--end module-->
-                        </div>
-                        <div class="col-md-11 col-sm-10 col-xs-9">
-                            <div class="bar__module">
-                                <a class="menu-toggle pull-right" href="#" data-notification-link="sidebar-menu">
-                                    <i class="stack-interface stack-menu"></i>
-                                </a>
-                            </div>
-                            <!--end module-->
-                        </div>
-                        <!--end columns-->
+                  <div class="navbar-brand"><a class="navbar-item" href="/"><img src="img/logo.png" alt="Vanessa Castilho | Designer, Front-end Developer" height="48"></a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+                  <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-start"></div>
+                    <div class="navbar-end"><a class="navbar-item" href="https://www.linkedin.com/in/vanessa-carvalho-pillar/" target="_blank">My LinkedIn</a>
+                      <div class="navbar-item"><a class="button is-primary is-outlined is-rounded" href="mailto:nessacastilhoo@gmail.com">Say Hello</a></div>
                     </div>
-                    <!--end of row-->
+                  </div>
                 </div>
-                <!--end of container-->
-            </nav>
+              </nav>
 
             <div class="main-container">
             <section class="text-center imagebg space--lg" data-overlay="3">
@@ -58,31 +43,77 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-md-6">
-                            <h1>Hi, I'm Vanessa Castilho, UX/UI Designer and Front-end Developer.</h1>
+                            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">UX/UI Designer & <br>Front-end Developer.</h1>
                             <p class="lead">
-                                I design and code beautifully simple things, and I love what I do. 
-                            <br> I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+                                I design and code beautifully simple things. I love what I do. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
                 <!--end of container-->
             </section>
-            <section class="text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                            <h2>Hello! </h2>
-                            <p class="lead">
-                                I am an experienced designer lover based in Miami. I'm available for freelance and remote jobs. I specialize in User Interface and Front End. 
 
-                            </p>
-                        </div>
+            <section class="section is-medium is-primary has-text-centered is-long">
+                <div class="container">
+                  <div class="columns is-centered">
+                    <div class="column is-three-fifths">
+                      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Vanessa. Nice to meet you!</h1>
+                      <h2 class="subtitle is-size-5-desktop">I am an experienced Designer based in Miami.<br>As a Designer, I value simple content structure, clean design patterns, and thoughtful interactions. As a Front-end Developer</strong>
+                        I like to code things from scratch, and enjoy bringing ideas to life in the browser. </h2>
                     </div>
-                    <!--end of row-->
+                  </div>
                 </div>
-                <!--end of container-->
-            </section>
+              </section>
+
+            <section class="section skills has-text-centered">
+                <div class="container is-narrow">
+                  <div class="box">
+                    <div class="content">
+                      <div class="columns is-centered">
+                        <div class="column">
+                          <figure class="image"><img class="is-skill-icon" src="img/designer.svg"></figure>
+                          <h1 class="title is-size-4 is-spaced">Designer</h1>
+                          <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                          <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
+                          <p>UX, UI, Web, Mobile, Apps, Logos</p>
+                          <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
+                          <ul>
+                            <li>Balsamiq Mockups</li>
+                            <li>Figma</li>
+                            <li>Invision</li>
+                            <li>Marvel</li>
+                            <li>Pen &amp; Paper</li>
+                            <li>Sketch</li>
+                            <li>Webflow</li>
+                            <li>Zeplin</li>
+                          </ul>
+                        </div>
+                        <div class="column">
+                          <figure class="image"><img class="is-skill-icon" src="img/frontend.svg"></figure>
+                          <h1 class="title is-size-4 is-spaced">Front-end Developer</h1>
+                          <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                          <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
+                          <p>HTML, Pug, Slim, CSS, Sass, Less</p>
+                          <p class="list-title has-text-primary has-text-weight-normal">Dev Tools:</p>
+                          <ul>
+                            <li>Atom</li>
+                            <li>Bitbucket</li>
+                            <li>Bootstrap</li>
+                            <li>Bulma</li>
+                            <li>Codekit</li>
+                            <li>Codepen</li>
+                            <li>Github</li>
+                            <li>Gitlab</li>
+                            <li>Terminal</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
 
             <div class="main-container">
             <section class="text-center space--even">
@@ -90,8 +121,8 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="typed-headline">
-                                <span class="h2 inline-block">We will help you to</span>
-                                <span class="h2 inline-block typed-text typed-text--cursor color--primary" data-typed-strings="engage audiences,convert visitors,forge ahead,establish your brand,target customers, communicate better"></span>
+                                <span class="h2 inline-block">I will help you to</span>
+                                <span class="h2 inline-block typed-text typed-text--cursor color--primary" data-typed-strings="bring ideas to life, ,forge ahead,establish your brand,target customers, communicate better"></span>
                             </div>
                         </div>
                     </div>
@@ -99,7 +130,13 @@
                 </div>
                 <!--end of container-->
             </section>
-            <section>
+
+            <section class="section projects is-medium is-white has-text-centered">
+                <div class="container is-narrow">
+                  <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Recent Work</h1>
+                  <h2 class="subtitle is-size-5-desktop">Here are a few recent design projects. Want to see more? <a href="mailto:nessacastilhoo@gmail.com">Email me</a>.</h2>
+             
+
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -234,176 +271,32 @@
                 <!--end of container-->
             </section>
 
-            <div class="notification pos-right pos-top side-menu bg--white" data-notification-link="sidebar-menu" data-animation="from-right">
-                <div class="side-menu__module pos-vertical-center text-right">
-
-                    <ul class="menu-vertical">
-                        <li>
-                            <a class="inner-link" href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a class="inner-link" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="inner-link" href="marketing-services.html">Services</a>
-                        </li>
-                        <li>
-                            <a class="inner-link" href="#work">Work</a>
-                        </li>
-                        <li>
-                            <a class="inner-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+           
                 <!--end module-->
-                <div class="side-menu__module pos-bottom pos-absolute col-xs-12 text-right">
-                    <ul class="social-list list-inline text-right list--hover">
-                        <li>
-                            <a href="#">
-                                <i class="socicon socicon-google icon icon--xs"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="socicon socicon-twitter icon icon--xs"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/lifemediadesign">
-                                <i class="socicon socicon-facebook icon icon--xs"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/lifemedia.design">
-                                <i class="socicon socicon-instagram icon icon--xs"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            
             </div>
         </div>
          
-
-        <div class="main-container">
-            <section class="text-center height-50">
-                <div class="container pos-vertical-center">
-                    <div class="row">
-                        <div class="col-sm-8 col-md-6">
-                            <h1>Let's talk about your project</h1>
-                            <p class="lead">
-                               Make contact via the form below to talk more about your project or idea.
-                            </p>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
-            <section class="text-center imagebg" data-gradient-bg='#4876BD,#5448BD,#8F48BD,#BD48B1'>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-9 col-md-8">
-                            <form class="form--inline form-email" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
-                                <span class="h4 inline-block">Hi, I'm</span>
-                                <input type="text" name="Name" placeholder="Full Name" class="validate-required" />
-                                <span class="h4 inline-block">and I represent</span>
-                                <input type="text" name="Company" placeholder="Company Name" class="validate-required" />
-                                <span class="h4 inline-block">I'm looking for someone to work with us on</span>
-                                <div class="input-select">
-                                    <select class="validate-required">
-                                        <option selected="" value="">Select</option>
-                                        <option value="Design">Web Design</option>
-                                        <option value="Development">Web Development</option>
-                                        <option value="Branding">Branding</option>
-                                        <option value="Branding">Logo Design</option>
-                                        <option value="Branding">Photography</option>
-                                    </select>
-                                </div>
-                                <span class="h4 inline-block">Budget-wise, I am looking to keep around the</span>
-                                <div class="input-select">
-                                    <select class="validate-required">
-                                        <option selected="" value="">Select</option>
-                                        <option value="0-5k">&lt; 5,000</option>
-                                        <option value="5k-10k">5,000 - 10,000</option>
-                                        <option value="10k-20k">10,0000 +</option>
-                                    </select>
-                                </div>
-                                <span class="h4 inline-block">mark,</span>
-                                <span class="h4 inline-block">and I'm hoping to have the project complete around</span>
-                                <input type="text" name="Date" placeholder="Date / Timeframe" class="validate-required" />
-                                <span class="h4 inline-block">Contact me via</span>
-                                <input type="email" name="email" placeholder="Email Address" class="validate-required validate-email" />
-                                <span class="h4 inline-block">or</span>
-                                <input type="tel" name="Phone" placeholder="Phone Number" class="validate-required" />
-                                <span class="h4 inline-block">and we can discuss the project in more detail.</span>
-                                <div>
-                                    <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
             
             <div class="tabs-container text-center" data-content-align="left">         
                 <div class="tab__content">
-                    <section class="text-center ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="heading-block">
-                                        <h2>Follow us for updates and more</h2>
-                                    </div>
-                                    <div class="instafeed" data-user-name="lifemedia.design" data-amount="6" data-grid="6"></div>
-                                    <a class="btn btn--icon bg--instagram type--uppercase" href="https://www.instagram.com/lifemedia.design" target="_blank">
-                                        <span class="btn__text">
-                                            <i class="socicon socicon-instagram"></i>
-                                            Follow @lifemedia.design
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end of container-->
-                    </section>
                 </div>
             </section>
-            <footer class="text-center space--sm footer-5  ">
-                <div class="container">
-                    <div class="row">
+
+            <footer class="section is-primary is-small has-text-centered">
+                <div class="container is-narrow"><a class="logo" href="/"><img src="img/white-logo.png" alt="Vanessa Castilho de Carvalho | Designer, Front-end Developer" height="48"></a>
+                  <div class="columns is-centered"> 
+                    <div class="column is-one-third">
+                      <h1 class="title is-size-4-touch">Living, learning, &amp; creating one day at a time.</h1>
+                    </div>
+                  </div>
+                  <div class="row">
                         <div class="col-sm-12">
-                            <div class="heading-block">
-                                <ul class="list-inline list--hover">
-                                    <li>
-                                        <a href="#">
-                                            <span>Our Company</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>Locations</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>Products</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span>Work With Us</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div>
                                 <ul class="social-list list-inline list--hover">
                                     <li>
-                                        <a href="#">
-                                            <i class="socicon socicon-google icon icon--xs"></i>
+                                        <a href="https://www.linkedin.com/in/vanessa-carvalho-pillar/">
+                                            <i class="socicon socicon-linkedin icon icon--xs"></i>
                                         </a>
                                     </li>
                                     <li>
@@ -412,32 +305,19 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/lifemediadesign">
-                                            <i class="socicon socicon-facebook icon icon--xs"></i>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="https://www.instagram.com/lifemedia.design">
                                             <i class="socicon socicon-instagram icon icon--xs"></i>
                                         </a>
                                     </li>
                                 </ul>
-                             
-                             
-
-
-
-
-                                <span class="type--fine-print">&copy;
-                                    <span class="update-year"></span> Vanessa Castilho de Carvalho Portfolio </span>
-                                
                             </div>
                         </div>
                     </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </footer>
+                  </div>
+              </footer>
+
+              
+            
         </div>
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
