@@ -9773,10 +9773,20 @@ body:not(.device-touch) .clients-grid li a {
 	overflow: hidden;
 }
 
+a.current {
+	color: #1ABC9C !important; 
+}
+
 .cool {
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
+}
+
+.p2 {
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+
 }
 
 .testi-content p {
@@ -10936,7 +10946,7 @@ blockquote.float-right {
 	height: 100%;
 	content: "";
 	display: block;
-	opacity: 0.6;
+	opacity: 0.2;
 	background-color: #000;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -12144,10 +12154,14 @@ button.toast-close-button {
 -----------------------------------------------------------------*/
 
 
-#footer {
-	position: relative;
-	background-color: #EEE;
-	border-top: 5px solid rgba(0,0,0,0.2);
+.dark #copyrights {
+	 background-color: #e0e0e033 !important;
+	 text-shadow: 1px 1px 1px #e0e0e0;
+	color: white;
+}
+
+.dark .copyright-links a:hover {
+	color: #1ABC9C !important;
 }
 
 .device-xl.sticky-footer #top-bar,
