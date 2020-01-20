@@ -9773,6 +9773,12 @@ body:not(.device-touch) .clients-grid li a {
 	overflow: hidden;
 }
 
+.cool {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
 .testi-content p {
 	margin-bottom: 0;
 	font-family: 'Crete Round', serif;
