@@ -3673,7 +3673,7 @@ body:not(.device-touch) .grid-container {
 	 
 	font-family: "Exo", sans-serif;
 	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ee7752, #923cbf, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradientBG 60s ease infinite;
 	padding-top: 20px;
