@@ -20,6 +20,41 @@
       <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
       <link rel="stylesheet" href="css/responsive.css" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+         .dr-seuss-container{
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            top: 0px;
+            transform: scaleX(-1);
+         }
+         .dr-seuss-image{
+            transform: translate3d(100%, 60%, 0) scale(0.9);
+            position: absolute;
+            bottom: 0px;
+            transition: all 1s;
+            opacity: .2;
+         }
+         .dr-seuss-image.up{
+            transition: all 1s;
+            transform: translate3d(120%, 0%, 0) scale(1.1);
+            opacity: .7;
+         }
+      </style>
+      <script>
+         var calculateScrollPos = function(e){
+            var max = 100
+            var currentScroll = this.scrollY
+            var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            var pos = Math.min((totalHeight - currentScroll), max)
+            if(pos < 100){
+               document.getElementById('dr-seuss').classList.add('up')
+            } else {
+               document.getElementById('dr-seuss').classList.remove('up')
+            }
+         }
+         window.addEventListener('scroll', calculateScrollPos)
+      </script>
       <!-- Document Title
          ============================================= -->
       <title>Vanessa Castilho de Carvalho | UX/UI Designer</title>
@@ -111,8 +146,8 @@
                         </div>
                         <div class="portfolio-overlay" data-lightbox="gallery">
                            <div class="portfolio-desc">
-                              <h3><a href="portfolio-hostel.html">Eco Hostel</a></h3>
-                              <span><a href="#">User Journey Maps,</a> <a href="#">Website Redesign & Branding</a></span>
+                              <h3><a href="portfolio-hostel.html">Eco Hostel Project - Brazil</a></h3>
+                              <span><a href="#">Branding,</a> <a href="#">Booking Mobile Experience & Website Redesign</a></span>
                            </div>
                            <a href="images/webdesign.jpg" class="left-icon" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
                            <a href="images/business-cards.jpg" class="hidden" data-lightbox="gallery-item"></a>
@@ -132,8 +167,8 @@
                         </div>
                         <div class="portfolio-overlay" data-lightbox="gallery">
                            <div class="portfolio-desc">
-                              <h3><a href="portfolio-boats-group.html">User Experience</a></h3>
-                              <span><a href="#">Online Tests</a> <a href="#">& Features Redesign</a></span>
+                              <h3><a href="portfolio-boats-group.html">Software Company</a></h3>
+                              <span><a href="#">Online A/B Tests</a> <a href="#">, UX Design for Features & Product Design. </a></span>
                            </div>
                            <a href="images/mac-portfolio-2.png" class="left-icon" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
                            <a href="images/mac-portfolio.png" class="hidden" data-lightbox="gallery-item"></a>
@@ -168,7 +203,7 @@
                   </div>
                   <div class="portfolio-overlay" data-lightbox="gallery">
                   <div class="portfolio-desc">
-                  <h3><a href="bistro.html">Brazilian Bistro</a></h3>
+                  <h3><a href="bistro.html">Latin Bistro</a></h3>
                   <span><a href="#">Branding, User Research, Graphic Material and</a> <a href="#">Website</a></span>
                   </div>
                   <a href="images/phone-bistro.png" class="hidden" data-lightbox="gallery-item"></a>
@@ -194,7 +229,10 @@
       </section>
       <!-- Footer
          ============================================= -->
-      <footer id="" class="dark">
+      <footer id="" class="dark" style="position: relative; overflow: hidden;">
+         <div class="dr-seuss-container">
+            <img class="dr-seuss-image" id='dr-seuss' src="img/footer-image.png"/>
+         </div>
       <!-- Copyrights
          ============================================= -->
       <div id="copyrights">
