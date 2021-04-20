@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Vanessa Castilho de Carvalho" />
+   <head>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Vanessa Castilho de Carvalho" />
+      <!-- Stylesheets
+         ============================================= -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+      <link rel="stylesheet" href="style.css" type="text/css" />
+      <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+      <link rel="stylesheet" href="css/dark.css" type="text/css" />
+      <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+      <link rel="stylesheet" href="css/animate.css" type="text/css" />
+      <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+         .dr-seuss-container{
+         position: absolute;
+         width: 100%;
+         bottom: 0px;
+         top: 0px;
+         transform: scaleX(-1);
+         }
+         .dr-seuss-image{
+         transform: translate3d(100%, 60%, 0) scale(0.9);
+         position: absolute;
+         bottom: 0px;
+         transition: all 1s;
+         opacity: .1;
+         left: 14vw;
+         width: 10%;
+         }
+         .dr-seuss-image.up{
+         transition: all 1s;
+         transform: translate3d(120%, 0%, 0) scale(1.1);
+         opacity: .3;
+         }
+      </style>
+      <script>
+         var calculateScrollPos = function(e){
+            var max = 100
+            var currentScroll = this.scrollY
+            var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            var pos = Math.min((totalHeight - currentScroll), max)
+            if(pos < 100){
+               document.getElementById('dr-seuss').classList.add('up')
+            } else {
+               document.getElementById('dr-seuss').classList.remove('up')
+            }
+         }
+         window.addEventListener('scroll', calculateScrollPos)
+      </script>
+      <!-- Document Title
+         ============================================= -->
+      <title>UX Designer  | Vanessa Castilho de Carvalho </title>
+   </head>
+   <body class="stretched device-xl device-touch gototop-active">
+      <!-- Document Wrapper
+         ============================================= -->
+      <div id="wrapper">
+      <!-- Header
+         ============================================= -->
+      <header id="header" class="full-header">
+         <div id="header-wrap" class="">
+            <div class="container clearfix">
+               <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+               <!-- Logo
+                  ============================================= -->
+               <div id="logo">
+                  <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
+                  <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
+               </div>
+               <!-- #logo end -->
+               <!-- Primary Navigation
+                  ============================================= -->
+               <nav id="primary-menu" class="on-click style-6">
+                  <ul>
+                     <li>
+                        <a href="index.html">
+                           <div>
+                              My Portfolio
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="about-me.html">
+                           <div>
+                              About Me
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="mailto:nessacastilhoo@gmail.com?Subject=Hello%20again" target="_top">
+                           <div>
+                              Contact
+                           </div>
+                        </a>
+                     </li>
 
-	<!-- Stylesheets
-	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
- 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-
-	<!-- Document Title
-	============================================= -->
-	<title>Vanessa Castilho de Carvalho | UX/UI Designer</title>
-
-</head>
-
-<body class="stretched device-xl device-touch gototop-active">
-
-		<!-- Document Wrapper
-		============================================= -->
-		<div id="wrapper">
-	
-			<!-- Header
-			============================================= -->
-			<header id="header" class="full-header">
-	
-				<div id="header-wrap" class="">
-	
-					<div class="container clearfix">
-	
-						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-	
-						<!-- Logo
-						============================================= -->
-						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
-						</div><!-- #logo end -->
-	
-						<!-- Primary Navigation
-						============================================= -->
-						<nav id="primary-menu" class="on-click style-6">
-							<ul>
-										<li>
-											<a href="index.html">
-											<div>
-												My Portfolio
-											</div></a>
-										</li>
-										<li>
-											<a href="about-me.html">
-											<div>
-												About Me
-											</div></a>
-										</li>
-										<li>
-											<a href="mailto:nessacastilhoo@gmail.com?Subject=Hello%20again" target="_top">
-											<div>
-												Contact
-
- 											</div></a>
-										</li>
-
-									
-									</ul>
- 						</nav>
-					</div>
-				</div>
-
-			</header>
-		
-			
-			
+                     <li>
+                        <a href="blog.html">
+                           <div>
+                              Blog
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
 	
 		<!-- Content
             ============================================= -->

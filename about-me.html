@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
    <head>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="author" content="Vanessa Castilho de Carvalho" />
@@ -16,61 +20,102 @@
       <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
       <link rel="stylesheet" href="css/responsive.css" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-      <link rel="manifest" href="/site.webmanifest">
+      <style>
+         .dr-seuss-container{
+         position: absolute;
+         width: 100%;
+         bottom: 0px;
+         top: 0px;
+         transform: scaleX(-1);
+         }
+         .dr-seuss-image{
+         transform: translate3d(100%, 60%, 0) scale(0.9);
+         position: absolute;
+         bottom: 0px;
+         transition: all 1s;
+         opacity: .1;
+         left: 14vw;
+         width: 10%;
+         }
+         .dr-seuss-image.up{
+         transition: all 1s;
+         transform: translate3d(120%, 0%, 0) scale(1.1);
+         opacity: .3;
+         }
+      </style>
+      <script>
+         var calculateScrollPos = function(e){
+            var max = 100
+            var currentScroll = this.scrollY
+            var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            var pos = Math.min((totalHeight - currentScroll), max)
+            if(pos < 100){
+               document.getElementById('dr-seuss').classList.add('up')
+            } else {
+               document.getElementById('dr-seuss').classList.remove('up')
+            }
+         }
+         window.addEventListener('scroll', calculateScrollPos)
+      </script>
       <!-- Document Title
          ============================================= -->
-      <title>Vanessa Castilho | User Experience Designer </title>
+      <title>UX Designer  | Vanessa Castilho de Carvalho </title>
    </head>
    <body class="stretched device-xl device-touch gototop-active">
       <!-- Document Wrapper
          ============================================= -->
       <div id="wrapper">
-         <!-- Header
-            ============================================= -->
-         <header id="header" class="full-header">
-            <div id="header-wrap" class="">
-               <div class="container clearfix">
-                  <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-                  <!-- Logo
-                     ============================================= -->
-                  <div id="logo">
-                     <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
-                     <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
-                  </div>
-                  <!-- #logo end -->
-                  <!-- Primary Navigation
-                     ============================================= -->
-                  <nav id="primary-menu" class="on-click style-6">
-                     <ul>
-                        <li>
-                           <a href="index.html">
-                              <div>
-                                 My Portfolio
-                              </div>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="about-me.html">
-                              <div>
-                                 About Me
-                              </div>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="mailto:nessacastilhoo@gmail.com?Subject=Hello%20again" target="_top">
-                              <div>
-                                 Contact
-                              </div>
-                           </a>
-                        </li>
-                     </ul>
-                  </nav>
+      <!-- Header
+         ============================================= -->
+      <header id="header" class="full-header">
+         <div id="header-wrap" class="">
+            <div class="container clearfix">
+               <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+               <!-- Logo
+                  ============================================= -->
+               <div id="logo">
+                  <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
+                  <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
                </div>
+               <!-- #logo end -->
+               <!-- Primary Navigation
+                  ============================================= -->
+               <nav id="primary-menu" class="on-click style-6">
+                  <ul>
+                     <li>
+                        <a href="index.html">
+                           <div>
+                              My Portfolio
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="about-me.html">
+                           <div>
+                              About Me
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="mailto:nessacastilhoo@gmail.com?Subject=Hello%20again" target="_top">
+                           <div>
+                              Contact
+                           </div>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="blog.html">
+                           <div>
+                              Blog
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
             </div>
-         </header>
+         </div>
+      </header>
          <!-- Content
             ============================================= -->
          <section id="content">
@@ -143,11 +188,22 @@
                   <div class="main-paragraph">
                      <h2>My Design <span>Process</span></h2>
                      
-                     I start my work developing a clear context of the <strong>pain points</strong> from the user perspective.<br><br>
+                     EMPHATIZE - I begin my design process by focusing on understanding user behaviors, needs, and motivations through observation and feedback.
+                     I call this my number one step: Empathizing with users and defining pain points. I like building empathy maps applying the results of my
+                     conducted user interviews. Next, I focus on indentifying user pain points so that I can create user stories and user journey maps. All of my work to empathize with users will help me define the problem that users are facing.
+
+                     DEFINE - To define the problem my designs will solve, I'll build a problem statement, a hypothesis statement, and a value proposition. 
+                     Identifying the pain points the user is experiencing will help me find potential problems that my designs can solve. 
+                     Knowing the pain points, I can start writing problem statements. 
+
+                     Once I have analyzed my research and understand users’ problems, I start coming up with solutions (hypothesis statements). They help me narrow down my research insights into goals for my product, so I can stay focused on the wants and needs of users. Finally, I'm ready to define the product value propositions. 
+
+                     IDEATE - Considering everything I've learned so far, I'll brainstorm ideas for design solutions. I'll build wireframes and low-fidelity PROTOTYPEs. 
+
+
                      <img  src="images/DesignProcess.jpg" alt="Open Imagination" class="center">
                      <br>
-                     <span> Next, I transition to the <strong>ideation</strong> stage, where I brainstorm and explore creative solutions!
-                     <br><br>With good ideas in hand, I <strong>prototype</strong> low-fidelity designs and gather feedback to be certain the team/stakeholders agree with the direction. Based on critiques and observations, I develop the high-fidelity variations.
+                     Based on critiques and observations, I develop high-fidelity designs.
                      <br><br>Finally I design tests to gauge the effectiveness of my final designs. This is an essential stage that requires an open mind. The question I want to answer is, "Do the designs achieve the business goal and engage the user?" Test results can be fun and illuminating because they may give counter intuitive results...
                      This is my desgin approach in a nutshell. 							
                      </span>

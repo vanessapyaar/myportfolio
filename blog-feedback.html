@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Vanessa Castilho de Carvalho" />
+      <!-- Stylesheets
+         ============================================= -->
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+      <link rel="stylesheet" href="style.css" type="text/css" />
+      <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+      <link rel="stylesheet" href="css/dark.css" type="text/css" />
+      <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+      <link rel="stylesheet" href="css/animate.css" type="text/css" />
+      <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+      <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+         .dr-seuss-container{
+         position: absolute;
+         width: 100%;
+         bottom: 0px;
+         top: 0px;
+         transform: scaleX(-1);
+         }
+         .dr-seuss-image{
+         transform: translate3d(100%, 60%, 0) scale(0.9);
+         position: absolute;
+         bottom: 0px;
+         transition: all 1s;
+         opacity: .1;
+         left: 14vw;
+         width: 10%;
+         }
+         .dr-seuss-image.up{
+         transition: all 1s;
+         transform: translate3d(120%, 0%, 0) scale(1.1);
+         opacity: .3;
+         }
+      </style>
+      <script>
+         var calculateScrollPos = function(e){
+            var max = 100
+            var currentScroll = this.scrollY
+            var totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            var pos = Math.min((totalHeight - currentScroll), max)
+            if(pos < 100){
+               document.getElementById('dr-seuss').classList.add('up')
+            } else {
+               document.getElementById('dr-seuss').classList.remove('up')
+            }
+         }
+         window.addEventListener('scroll', calculateScrollPos)
+      </script>
+      <!-- Document Title
+         ============================================= -->
+      <title>UX Designer  | Vanessa Castilho de Carvalho </title>
+   </head>
+   <body class="stretched device-xl device-touch gototop-active">
+      <!-- Document Wrapper
+         ============================================= -->
+      <div id="wrapper">
+      <!-- Header
+         ============================================= -->
+      <header id="header" class="full-header">
+         <div id="header-wrap" class="">
+            <div class="container clearfix">
+               <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+               <!-- Logo
+                  ============================================= -->
+               <div id="logo">
+                  <a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
+                  <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Vanessa Castilho Logo"></a>
+               </div>
+               <!-- #logo end -->
+               <!-- Primary Navigation
+                  ============================================= -->
+               <nav id="primary-menu" class="on-click style-6">
+                  <ul>
+                     <li>
+                        <a href="index.html">
+                           <div>
+                              My Portfolio
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="about-me.html">
+                           <div>
+                              About Me
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="mailto:nessacastilhoo@gmail.com?Subject=Hello%20again" target="_top">
+                           <div>
+                              Contact
+                           </div>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="blog.html">
+                           <div>
+                              Blog
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>Feedback & Critical Thinking</h1>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">Blog</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Blog Single</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Post Content
+					============================================= -->
+					<div class="postcontent nobottommargin clearfix">
+
+						<div class="single-post nobottommargin">
+
+							<!-- Single Post
+							============================================= -->
+							<div class="entry clearfix">
+
+							 
+								 
+								<!-- Entry Image
+								============================================= -->
+								<div class="entry-image">
+									<a href="#"><img src="img/feedback-post.jpg" alt="Blog Single"></a>
+								</div><!-- .entry-image end -->
+
+								<!-- Entry Content
+								============================================= -->
+								<div class="entry-content notopmargin">
+
+									<h4>As part of the design world, creating web experiences is no easy task. That's why collaboration is a crucial element in the success of projects in all modern organizations. It's just not effective for a single individual to be responsible for coming up with an idea, design, build, and sell - all by himself. Instead, these responsibilities are divided amongst teams, each bringing their knowledge to the project. One of the most common ways design discussions are initiated is through "design reviews" sessions, or simply asking team members and stakeholders for "feedback". <br><br>
+
+									The problem with asking for feedback is that very often we aren't being specific enough in describing what we really want feedback on. Feedback itself is nothing more than a reaction or gut response. Sometimes, we get a passionate reaction, a list of comments, or even instructions on how that feature should be designed. Sorting these comments, suggestions, and reactions, trying to identify the pieces of the design we should iterate upon can be very difficult.<br> <br>
+									
+									What we really need instead is critical thinking. Critical thinking is defined as "the process of taking a statement and determining if it is true or false". When we're designing, we're doing so to meet or accomplish some set of goals. When looking for feedback on our creations we should aim to understand whether our piece of design is, in fact, achieving those goals or solving the initial problem. <br><br>
+									
+									We can imagine the anatomy of critical thinking comprised of three key pillars:<br><br>
+									
+									It identifies a specific aspect in the design to be analyzed;
+									It relates that aspect to a goal or best practice;
+									It describes how and why the design subject work to support or not support the objective or best practice.
+									Therefore, critical thinking is the most helpful type of feedback in understanding the real impact of our design decisions. Critique is a form of analysis that uses critical thinking to determine whether a creation is achieving its desired outcomes and following best practices/heuristics or not. <br><br>
+									
+									Besides, the practice of critical thinking:<br><br>
+									
+									1) Facilitates building shared vocabularies amongst teams (as a consequence of having frequent conversations focused on objectives for the product).
+									
+									2) Helps us achieving consensus naturally around the strongest options.
+									
+									3) It informs and drives iteration.
+									
+									4) It is a life skill! :) <br><br>
+									
+									If we want to improve our processes and enhance the way our team members work together, we can't ignore the details and we cant silo our critical thinking. Practice makes perfect and this approach can makes us not only better professionals but also better citizens, better family members, and the list goes on.
+									
+									</h4>
+									<!-- Post Single - Content End -->
+
+									<!-- Tag Cloud
+									============================================= -->
+									<div class="tagcloud clearfix bottommargin">
+										<a href="#">design</a>
+										<a href="#">feedback</a>
+								 
+									</div><!-- .tagcloud end -->
+
+									<div class="clear"></div>
+
+							 
+
+								</div>
+							</div><!-- .entry end -->
+
+							 
+
+	 
+
+		</section><!-- #content end -->
+
+	      <!-- Footer
+         ============================================= -->
+		 <footer id="" class="dark" style="position: relative; overflow: hidden;">
+			<div class="dr-seuss-container">
+			<img class="dr-seuss-image" id='dr-seuss' src="img/footer-image.png"/>
+			</div>
+			<!-- Copyrights
+			   ============================================= -->
+			<div id="copyrights">
+			<div class="container clearfix">
+			<div class="col_half">
+			<img src="images/logo.png" alt="vanessa castilho de carvalho" class="footer-logo" style="color: #fff;">
+			Created by Vanessa Castilho de Carvalho &copy;
+			</div>
+			<p class="main-paragraph" style="color:#666">“Think left and think right and think low and think high. Oh, the thinks you can think up if only you try!”
+			― Dr. Seuss</p>
+			<div class="col_half col_last tright">
+			<div class="copyrights-menu copyright-links fright clearfix" style="color: #fff;">
+			<a href="index.html">My Portfolio</a>/<a href="about-me.html">About Me</a>
+			</div>
+			<div class="fright clearfix">
+			<a href="https://twitter.com/uxdesignvanessa" class="social-icon si-small si-borderless nobottommargin si-twitter">
+			<i class="icon-twitter"></i>
+			<i class="icon-twitter"></i>
+			</a>
+			<a href="https://github.com/vanessapyaar" class="social-icon si-small si-borderless nobottommargin si-github">
+			<i class="icon-github"></i>
+			<i class="icon-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/vanessa-castilho-decarvalho/" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+			<i class="icon-linkedin"></i>
+			<i class="icon-linkedin"></i>
+			</a>
+			</div>
+			</div>
+			</div>
+			</div><!-- #copyrights end -->
+			</footer><!-- #footer end -->
+			</div><!-- #wrapper end-->
+			<!-- Go To Top
+			   ============================================= -->
+			<div id="gotoTop" class="icon-angle-up"></div>
+			<!-- External JavaScripts
+			   ============================================= -->
+			<script src="js/jquery.js"></script>
+			<script src="js/plugins.js"></script>
+			<!-- Footer Scripts
+			   ============================================= -->
+			<script src="js/functions.js"></script>
+			<script src="js/menu.js"></script>
+		 </body>
+	  </html>
+
+</body>
+</html>
